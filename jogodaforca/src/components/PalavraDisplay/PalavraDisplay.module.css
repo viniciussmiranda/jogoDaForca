@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.palavra {
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #374151;
+  letter-spacing: 0.5em;
+  margin-bottom: 1rem;
+}
+
+.tentativas {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.tentativas span {
+  font-weight: 500;
+}

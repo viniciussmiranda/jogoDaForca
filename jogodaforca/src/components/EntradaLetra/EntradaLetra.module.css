@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #9ca3af;
+}
+
+.botao {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background-color: #85afaf;
+  transition: background-color 0.2s;
+}
+
+.botao:hover {
+  background-color: #759999;
+}

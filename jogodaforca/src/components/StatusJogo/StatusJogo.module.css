@@ -1,0 +1,40 @@
+.container {
+  margin-bottom: 2rem;
+}
+
+.mensagem {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.mensagem h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.mensagem p {
+  color: #6b7280;
+}
+
+.botaoNovoJogo {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: #374151;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.botaoNovoJogo:hover {
+  background-color: #f9fafb;
+}
