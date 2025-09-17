@@ -1,7 +1,7 @@
 import styles from './LetrasUsadas.module.css';
 
 export default function LetrasUsadas({ letrasCorretas, letrasErradas }) {
-  // Renderização condicional - só mostra se há letras para exibir
+
   const temLetrasCorretas = letrasCorretas.length > 0;
   const temLetrasErradas = letrasErradas.length > 0;
   
@@ -11,7 +11,7 @@ export default function LetrasUsadas({ letrasCorretas, letrasErradas }) {
 
   return (
     <div className={styles.container}>
-      {/* Seção de letras corretas */}
+ 
       {temLetrasCorretas && (
         <div className={styles.secao}>
           <h3>Letras corretas</h3>
@@ -25,7 +25,7 @@ export default function LetrasUsadas({ letrasCorretas, letrasErradas }) {
         </div>
       )}
       
-      {/* Seção de letras erradas */}
+  
       {temLetrasErradas && (
         <div className={styles.secao}>
           <h3>Letras incorretas</h3>

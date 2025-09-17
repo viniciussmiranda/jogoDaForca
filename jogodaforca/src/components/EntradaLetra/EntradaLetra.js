@@ -2,10 +2,10 @@ import { useState } from 'react';
 import styles from './EntradaLetra.module.css';
 
 export default function EntradaLetra({ onTentativa, letrasUsadas }) {
-  // State local para controlar o input
+  
   const [valorInput, setValorInput] = useState('');
 
-  // Função para validar entrada
+ 
   function validarLetra(letra) {
     if (!letra) {
       return { valida: false, erro: 'Digite uma letra!' };
@@ -26,7 +26,7 @@ export default function EntradaLetra({ onTentativa, letrasUsadas }) {
     return { valida: true };
   }
 
-  // Event handler para o botão
+
   function handleTentativa() {
     const letra = valorInput.toUpperCase().trim();
     const validacao = validarLetra(letra);
@@ -36,19 +36,18 @@ export default function EntradaLetra({ onTentativa, letrasUsadas }) {
       return;
     }
 
-    // Chamar função pai e limpar input
+
     onTentativa(letra);
     setValorInput('');
   }
 
-  // Event handler para mudança no input
+
   function handleMudancaInput(event) {
-    // Pegar apenas o primeiro caractere e converter para maiúscula
+
     const novoValor = event.target.value.slice(0, 1).toUpperCase();
     setValorInput(novoValor);
   }
 
-  // Event handler para tecla pressionada
   function handleTecla(event) {
     if (event.key === 'Enter') {
       handleTentativa();

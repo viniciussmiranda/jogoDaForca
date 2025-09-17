@@ -1,12 +1,12 @@
 import styles from './StatusJogo.module.css';
 
 export default function StatusJogo({ status, palavra, onNovoJogo }) {
-  // Renderização condicional baseada no status
+ 
   if (status === 'jogando') {
-    return null; // Não renderiza nada se ainda está jogando
+    return null; 
   }
 
-  // Determinar mensagem baseada no status
+  
   let titulo, mensagem;
   
   if (status === 'ganhou') {
